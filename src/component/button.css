@@ -1,0 +1,31 @@
+.component-button {
+  width: auto;
+}
+
+.component-button button {
+  border-radius: 0;
+  outline: 0;
+  font-size: 5rem;
+  border: 1px solid lightgrey;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.component-button--primary button {
+  background-color: #c4d6f2;
+}
+
+.component-button--primary button:hover {
+  background-color: #98b8ed;
+}
+
+.component-button--secondary button {
+  background-color: #f55e40;
+  color: #fff;
+}
+
+.component-button--secondary button:hover {
+  background-color: #f74420;
+}
