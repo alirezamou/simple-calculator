@@ -1,0 +1,11 @@
+.component-button-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: auto;
+  height: auto;
+}
+
+.component-button-panel .component-button:nth-last-of-type(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
