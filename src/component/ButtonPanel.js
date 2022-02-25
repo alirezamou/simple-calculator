@@ -1,40 +1,41 @@
-import {React} from 'react';
-
+import React from 'react';
 import Button from './button';
 import './buttonpanel.css';
 
-export default function ButtonPanel () {
+export default function ButtonPanel (props) {
+
+  const { onClick } = props;
 
     return (
         <div className='component-button-panel'>
             <React.Fragment>
-                <Button name="AC" buttonType="primary" />
-                <Button name="+/-" buttonType="primary" />
-                <Button name="%" buttonType="primary" />
-                <Button name="÷" buttonType="secondary" />
+                <Button onClick={onClick} name="AC" buttonType="primary" />
+                <Button onClick={onClick} name="+/-" buttonType="primary" />
+                <Button onClick={onClick} name="%" buttonType="primary" />
+                <Button onClick={onClick} name="÷" buttonType="secondary" />
             </React.Fragment>
             <React.Fragment>
-                <Button name="7" buttonType="primary"/>
-                <Button name="8" buttonType="primary"/>
-                <Button name="9" buttonType="primary"/>
-                <Button name="x" buttonType="secondary"/>
+                <Button onClick={onClick} name="7" buttonType="primary"/>
+                <Button onClick={onClick} name="8" buttonType="primary"/>
+                <Button onClick={onClick} name="9" buttonType="primary"/>
+                <Button onClick={onClick} name="x" buttonType="secondary"/>
             </React.Fragment>
             <React.Fragment>
-                <Button name="4" buttonType="primary"/>
-                <Button name="5" buttonType="primary"/>
-                <Button name="6" buttonType="primary"/>
-                <Button name="-" buttonType="secondary"/>
+                <Button onClick={onClick} name="4" buttonType="primary"/>
+                <Button onClick={onClick} name="5" buttonType="primary"/>
+                <Button onClick={onClick} name="6" buttonType="primary"/>
+                <Button onClick={onClick} name="-" buttonType="secondary"/>
             </React.Fragment>
             <React.Fragment>
-                <Button name="1" buttonType="primary" />
-                <Button name="2" buttonType="primary" />
-                <Button name="3" buttonType="primary" />
-                <Button name="+" buttonType="secondary" />
+                <Button onClick={onClick} name="1" buttonType="primary" />
+                <Button onClick={onClick} name="2" buttonType="primary" />
+                <Button onClick={onClick} name="3" buttonType="primary" />
+                <Button onClick={onClick} name="+" buttonType="secondary" />
             </React.Fragment>
             <React.Fragment>
-                <Button name="0" buttonType="primary" />
-                <Button name="." buttonType="primary" />
-                <Button name="=" buttonType="secondary" />
+                <Button onClick={onClick} name="0" buttonType="primary" />
+                <Button onClick={onClick} name="." buttonType="primary" />
+                <Button onClick={onClick} name="=" buttonType="secondary" />
             </React.Fragment>
         </div>
     );
