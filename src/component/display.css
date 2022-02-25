@@ -1,0 +1,9 @@
+.component-display {
+  background-color: lightgrey;
+}
+
+.display-text {
+  margin: 0;
+  padding: 1rem;
+  font-size: 10rem;
+}
